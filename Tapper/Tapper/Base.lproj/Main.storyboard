@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Tapper" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="33Z-bg-LCI">
+                                <rect key="frame" x="323" y="758" width="122" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="12c-Dl-yMh"/>
+                                    <constraint firstAttribute="width" constant="122" id="hgm-Na-JVa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                <state key="normal" title="Tap">
+                                    <color key="titleColor" red="0.19215686274509805" green="0.61960784313725492" blue="0.83921568627450982" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="TapButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7RA-hM-2Kg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mOE-SN-Yws">
+                                <rect key="frame" x="361" y="886" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="hQc-aS-7b5"/>
+                                </constraints>
+                                <state key="normal" title="Reset">
+                                    <color key="titleColor" red="0.97254901960784312" green="0.34509803921568627" blue="0.22352941176470589" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="ResetButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3zX-Zm-v6x"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qwb-Y6-l3Y">
+                                <rect key="frame" x="300" y="375" width="168" height="119"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="119" id="DJW-wj-tNt"/>
+                                    <constraint firstAttribute="width" constant="168" id="dCP-r9-tSc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="44"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99607843137254903" green="0.77647058823529413" blue="0.14509803921568629" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="mOE-SN-Yws" firstAttribute="top" secondItem="33Z-bg-LCI" secondAttribute="bottom" constant="86" id="5kx-8D-WsX"/>
+                            <constraint firstItem="mOE-SN-Yws" firstAttribute="centerX" secondItem="33Z-bg-LCI" secondAttribute="centerX" id="Hdg-CA-fvT"/>
+                            <constraint firstAttribute="bottom" secondItem="33Z-bg-LCI" secondAttribute="bottom" constant="224" id="KXB-2G-icg"/>
+                            <constraint firstItem="qwb-Y6-l3Y" firstAttribute="centerX" secondItem="33Z-bg-LCI" secondAttribute="centerX" id="UBR-vO-q0V"/>
+                            <constraint firstItem="qwb-Y6-l3Y" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aFM-i2-bhv"/>
+                            <constraint firstItem="qwb-Y6-l3Y" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="355" id="jxQ-Kz-OBt"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+                    <connections>
+                        <outlet property="CountLabel" destination="qwb-Y6-l3Y" id="DE9-16-p0f"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="177" y="285"/>
+        </scene>
+    </scenes>
+</document>
